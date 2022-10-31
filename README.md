@@ -35,7 +35,7 @@ THEN the password is either displayed in an alert or written to the page
 ## Mock-Up
 
 The following image shows the web application's appearance and functionality:
-![Screenshot](./Develop/Page-3.JPG)
+![Screenshot](./Page-3.JPG)
 
 To complete the challenge I have used the given starter code. when I click the button generate password the prompt window will pop up to get the length of the password. 
 
@@ -50,5 +50,5 @@ And the password will be displayed written to the page.
 
 Here is the screenshot of the password generated page which the user entered the password length is 9 and included numbers, special characters, uppercase, lowercase letters. 
 
-![Screenshot](./Develop/Page-1.JPG)
-![Screenshot](./Develop/Page-2.JPG)
+![Screenshot](./Page-1.JPG)
+![Screenshot](./Page-2.JPG)
