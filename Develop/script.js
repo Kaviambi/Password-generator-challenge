@@ -9,15 +9,15 @@ function randomInt(min, max)
     max=min;
     min =0;
   }
-  var rand = Math.random()
-  return Math.floor(min*(1- rand) + rand*max)
+var rand = Math.random();
+return Math.floor(min*(1- rand) + rand*max);
 }
+
 function getRandomItem(list) {
   return list[randomInt(list.length)];
 }
 
 function generatePassword(){
-
   var userDate = window.prompt("What is the length of the password?");
   var passwordLength = parseInt(userDate);
 
@@ -27,7 +27,6 @@ function generatePassword(){
 
   if(passwordLength < 8 || passwordLength > 128) {
       window.alert("password length must be between 8 and 128!");
-      
   }
 
 var userNumbers = window.confirm(" Would you like to add numbers in your password?");
@@ -49,15 +48,17 @@ var generateresult = [];
 if(userNumbers === true) {
     generateresult.push(numList)
 }
-
+//if the user wants to include special characters
 if(userSymbols === true) {
     generateresult.push(symbolList)
 }
 
+//if the user wants to include uppercase letters 
 if(userUppercase === true) {
     generateresult.push(UppercaseList)
 }
 
+//if the user wants to add lowercase letters
 if(userLowercase === true) {
     generateresult.push(LowercaseList)
 }
@@ -77,8 +78,6 @@ function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
-
 }
-
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
